@@ -3,35 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>John Marchetta</title>
+<title>John Joseph Marchetta</title>
 
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     background: #0f172a;
     color: #e5e7eb;
+    line-height: 1.6;
 }
 
 header {
-    padding: 80px 20px;
+    padding: 90px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #111827, #1e3a8a);
+    background: linear-gradient(135deg, #020617, #1e3a8a);
 }
 
-h1 {
+header h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    color: white;
+}
+
+header p {
+    margin-top: 12px;
+    color: #bfdbfe;
 }
 
 nav {
+    background: #020617;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 22px;
     padding: 18px;
-    background: #020617;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav a {
@@ -40,29 +57,67 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: white;
+}
+
 section {
-    max-width: 900px;
+    max-width: 1050px;
     margin: 40px auto;
     padding: 35px;
     background: #111827;
     border-radius: 14px;
-    box-shadow: 0 0 20px rgba(59,130,246,0.15);
+    box-shadow: 0 0 20px rgba(59,130,246,0.12);
 }
 
 h2 {
     color: #60a5fa;
+    margin-bottom: 18px;
+    font-size: 2rem;
 }
 
-.project {
-    border-left: 4px solid #60a5fa;
-    padding-left: 15px;
-    margin: 20px 0;
+h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 18px 0;
+    border-left: 4px solid #3b82f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+ul {
+    margin-left: 22px;
+}
+
+a {
+    color: #93c5fd;
 }
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 35px;
     color: #9ca3af;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -70,16 +125,328 @@ footer {
 <body>
 
 <header>
-    <h1>John Marchetta</h1>
-    <p>Computer Scientist | Physics Researcher | Quantum Computing</p>
+    <h1>John Joseph Marchetta</h1>
+    <p>Computer Scientist • Theoretical Physicist • Quantum Computing • HPC • AI</p>
+    <p>Chicago, IL | jjmarchetta@gmail.com</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
+    <a href="#hep">HEP-Th / Gravity</a>
+    <a href="#quantum">Quantum Computing</a>
+    <a href="#hpc">HPC</a>
+    <a href="#ai">AI</a>
     <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching & Outreach</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 </nav>
+
+<section id="about">
+    <h2>About</h2>
+    <p>
+        I am a computer scientist and theoretical physicist interested in quantum computing,
+        high-performance computing, artificial intelligence, and mathematical physics.
+        My work connects computer science, theoretical physics, scientific computing,
+        and machine learning.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>University of Chicago</h3>
+            <p>M.S. in Computer Science, 2025–2026</p>
+            <p>Distributed Systems, GPU Programming, Compilers</p>
+        </div>
+
+        <div class="card">
+            <h3>Baylor University</h3>
+            <p>M.A. in Physics, 2021–2023</p>
+            <p>Early Universe Cosmology and Strings</p>
+        </div>
+
+        <div class="card">
+            <h3>Southern Illinois University</h3>
+            <p>B.S. Physics and B.S. Mathematics</p>
+        </div>
+    </div>
+</section>
+
+<section id="hep">
+    <h2>HEP-Th / Gravity</h2>
+    <p>
+        My physics background includes string theory, quantum field theory,
+        loop quantum gravity, asymptotic symmetries, Casimir physics,
+        black holes, wormholes, and early-universe cosmology.
+    </p>
+
+    <div class="card">
+        <h3>Research Areas</h3>
+        <ul>
+            <li>String Theory and Quantum Field Theory</li>
+            <li>Loop Quantum Gravity and Spin Networks</li>
+            <li>Asymptotic Symmetries</li>
+            <li>Casimir Physics and Lifshitz Theory</li>
+            <li>Black Hole and Wormhole Geometry</li>
+            <li>Loop Quantum Cosmology</li>
+        </ul>
+    </div>
+</section>
+
+<section id="quantum">
+    <h2>Condensed Matter / Quantum Computing</h2>
+    <p>
+        I am interested in quantum error correction, stabilizer codes,
+        toric codes, topological phases of matter, quantum algorithms,
+        and fault-tolerant quantum computing.
+    </p>
+
+    <div class="card">
+        <h3>Quantum Error Correction Pipeline</h3>
+        <p>
+            Fault-tolerant microservice pipeline using Apache Camel and ActiveMQ
+            to route and filter error syndromes over JMS. Parallel dispatch to
+            MWPM, Union-Find, and Majority Vote decoders with a voting aggregator.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>CUDA Quantum Circuit Simulator</h3>
+        <p>
+            20-qubit GPU-accelerated simulator with GHZ state preparation,
+            concurrent CUDA streams, Nsight profiling, and gate-level parallelism.
+        </p>
+    </div>
+</section>
+
+<section id="hpc">
+    <h2>High Performance Computing</h2>
+    <p>
+        My HPC work focuses on CUDA, GPU programming, performance profiling,
+        SIMD, OpenMP, compiler optimization, and scientific simulation.
+    </p>
+
+    <div class="card">
+        <h3>Scientific Computing Optimization</h3>
+        <p>
+            Achieved up to 30× speedup of a C++ Lennard-Jones force kernel
+            by restructuring data from Array-of-Structs to Struct-of-Arrays,
+            enabling SIMD auto-vectorization and OpenMP parallelism.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Compilers</h3>
+        <p>
+            Built a GoLite compiler pipeline in Go: ANTLR lexer/parser,
+            AST, SSA, liveness analysis, LLVM IR, and ARM assembly.
+        </p>
+    </div>
+</section>
+
+<section id="ai">
+    <h2>AI Computing</h2>
+    <p>
+        My AI work includes machine learning for quantitative finance,
+        statistical arbitrage, scientific computing, and neural networks.
+    </p>
+
+    <div class="card">
+        <h3>AI Quant Labs</h3>
+        <p>
+            Applied Random Forests, KNN, SVM, Logistic Regression, and Neural Networks
+            to analyze crypto market price movements and develop statistical arbitrage strategies.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Raft REST Message Queue</h3>
+        <p>
+            Built a distributed message queue in Python exposing a REST API with Flask
+            for PUT/GET operations on FIFO topic queues. Implemented the full Raft
+            consensus algorithm from scratch.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>CUDA Quantum Circuit Simulator</h3>
+        <p>
+            GPU-accelerated quantum circuit simulation with GHZ state preparation,
+            CUDA streams, memory layout optimization, and profiling.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Quantum Error Correction Pipeline</h3>
+        <p>
+            Distributed pipeline for syndrome routing, decoder dispatch, and decoder result aggregation.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>GoLite Compiler</h3>
+        <p>
+            Full compiler pipeline from parser to LLVM IR and ARM assembly.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>HPC Scientific Computing</h3>
+        <p>
+            Optimized Lennard-Jones force kernels using data layout transformation,
+            SIMD auto-vectorization, and OpenMP.
+        </p>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Publications & Presentations</h2>
+
+    <div class="card">
+        <h3>Temperature-Distance Relations in Casimir Physics</h3>
+        <p>International Journal of Modern Physics, 2025.</p>
+    </div>
+
+    <div class="card">
+        <h3>Impact from Concentric Sphere Lifshitz Physics on Water Condensation</h3>
+        <p>Casimir Conference, 2024.</p>
+    </div>
+
+    <div class="card">
+        <h3>Supertranslations at Spatial Infinity in Terms of Ashtekar-Barbero Variables</h3>
+        <p>Midwest Relativity Meeting, 2023.</p>
+    </div>
+
+    <div class="card">
+        <h3>Even Self-Dual Lattices and Monstrous Moonshine</h3>
+        <p>Baylor Department of Mathematics, 2023.</p>
+    </div>
+
+    <div class="card">
+        <h3>Uniform Asymptotic Approximation Method with Pöschl–Teller Potential</h3>
+        <p>Universe 9, no. 11, 2023.</p>
+    </div>
+
+    <div class="card">
+        <h3>Investigations into the Relationship Between Loop Quantum Gravity and String Theory</h3>
+        <p>APS April Meeting, 2023.</p>
+    </div>
+
+    <div class="card">
+        <h3>Testing Geometric Surface Conjecture for Rotating Traversable Wormholes</h3>
+        <p>APS April Meeting, 2022.</p>
+    </div>
+
+    <div class="card">
+        <h3>Black Hole Entropy of 2D Spin Networks</h3>
+        <p>Wolfram Community, 2022.</p>
+    </div>
+
+    <div class="card">
+        <h3>Choi Isomorphism</h3>
+        <p>Quantum Information Seminar, Baylor University, 2021.</p>
+    </div>
+
+    <div class="card">
+        <h3>Geometrical Dependence in Casimir-Polder Repulsion</h3>
+        <p>Physical Review A, 2021.</p>
+    </div>
+</section>
+
+<section id="teaching">
+    <h2>Teaching & Outreach</h2>
+
+    <p>
+        I enjoy making advanced mathematics, physics, and computer science
+        accessible to students of all backgrounds. My teaching ranges from
+        middle school outreach to university quantum mechanics.
+    </p>
+
+    <div class="card">
+        <h3>University Teaching</h3>
+        <ul>
+            <li>Teaching Assistant — Quantum Mechanics I</li>
+            <li>Teaching Assistant — Quantum Mechanics II</li>
+            <li>Office hours, problem sessions, and grading for undergraduate physics</li>
+            <li>Quantum Information Seminar presentations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>High School Teaching</h3>
+        <ul>
+            <li>AP Calculus BC</li>
+            <li>Honors Pre-Calculus BC</li>
+            <li>Exploring Computer Science</li>
+            <li>Walter Payton College Preparatory High School</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>STEM Outreach</h3>
+        <ul>
+            <li>Math Circles of Chicago — abstract mathematics for middle and high school students</li>
+            <li>UChicago Splash — lessons on quantum mechanics and black holes</li>
+            <li>Weekly QFT/String Theory independent lecture series following Zwiebach</li>
+            <li>Education outreach in mathematics, physics, and computer science</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Mentorship</h3>
+        <ul>
+            <li>Representation Theory and Quantum Mechanics — undergraduate mentorship</li>
+            <li>Dark Matter Density Profiles — high school research mentorship</li>
+            <li>Generalized Fibonacci Sequences — middle school research mentorship</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Teaching Philosophy</h3>
+        <p>
+            I believe difficult ideas become approachable when students first develop
+            intuition and then connect that intuition to formal mathematics. My goal
+            is to help students build confidence through visualization, discussion,
+            problem solving, and concrete examples.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Computer Science Skills</h2>
+
+    <div class="card">
+        <p>
+            C, C++, template metaprogramming, Python, Go, Java, CUDA, Linux,
+            performance profiling, Docker, LLVM, PyTorch, Keras, Flask,
+            distributed systems, compilers, GPU programming, scientific computing,
+            and machine learning.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p>Email: jjmarchetta@gmail.com</p>
+        <p>GitHub: add your GitHub link here</p>
+        <p>LinkedIn: add your LinkedIn link here</p>
+        <p>Google Scholar: add your Google Scholar link here</p>
+        <p>YouTube: add your YouTube link here</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 John Joseph Marchetta</p>
+</footer>
+
+</body>
+</html>
 
 <section id="about">
     <h2>About Me</h2>
