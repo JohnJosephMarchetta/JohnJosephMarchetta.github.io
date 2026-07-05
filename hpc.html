@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPC | John Joseph Marchetta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">John Joseph Marchetta</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <div class="links">
+      <a href="index.html" class="link">Home</a>
+      <a href="hep-th-gravity.html" class="link">HEP-Th / Gravity</a>
+      <a href="quantum-computing.html" class="link">Quantum Computing</a>
+      <a href="hpc.html" class="link active">HPC</a>
+      <a href="ai.html" class="link">AI</a>
+      <a href="projects.html" class="link">Projects</a>
+      <a href="publications.html" class="link">Publications</a>
+      <a href="teaching.html" class="link">Teaching</a>
+      <a href="contact.html" class="link">Contact</a>
+    </div>
+  </nav>
+  
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="eyebrow">Research Area</div>
+    <h1>High Performance Computing</h1>
+    <p class="lede">CUDA, GPU programming, and performance optimization &mdash; making the physics and quantum information ideas above actually run fast.</p>
+  </div>
+</header>
+
+<main class="accent-hpc">
+  <h2 class="section-title">Focus Areas</h2>
+  <div class="tags" style="margin-bottom:32px;">
+    <span class="tag">CUDA</span>
+    <span class="tag">GPU Programming</span>
+    <span class="tag">OpenMP</span>
+    <span class="tag">SIMD Vectorization</span>
+    <span class="tag">Performance Profiling</span>
+  </div>
+
+  <h2 class="section-title">Projects</h2>
+
+  <div class="entry">
+    <div class="meta"><h3>CUDA Quantum Circuit Simulator</h3><span class="when">MPCS Project</span></div>
+    <div class="where">GPU Programming</div>
+    <p>20-qubit GPU-accelerated simulator with GHZ state preparation and concurrent CUDA stream execution. Nsight
+    profiling revealed that host-to-device (H2D) memory transfers dominated runtime; the CNOT kernel was
+    memory-bound, while the Hadamard gate achieved high SM compute throughput via FP64 arithmetic. Tuned memory
+    layout and kernel launch parameters accordingly for maximum gate-level parallelism.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>Lennard-Jones Force Kernel Optimization</h3><span class="when">MPCS Project</span></div>
+    <div class="where">C++ / OpenMP</div>
+    <p>Achieved up to a 30&times; speedup of a C++ Lennard-Jones force kernel by restructuring data from
+    Array-of-Structures (AoS) to Structure-of-Arrays (SoA), enabling compiler SIMD auto-vectorization combined
+    with OpenMP parallelism.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>GoLite Compiler</h3><span class="when">MPCS Project</span></div>
+    <div class="where">Go, ANTLR, LLVM</div>
+    <p>Full compiler pipeline in Go: ANTLR lexer/parser &rarr; AST &rarr; SSA &rarr; liveness analysis &rarr; LLVM IR
+    &rarr; ARM assembly.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>Raft Consensus Message Queue</h3><span class="when">MPCS Project</span></div>
+    <div class="where">Python, Flask, Docker</div>
+    <p>Distributed message queue exposing a REST API (Flask) for PUT/GET operations on FIFO topic queues, with the
+    full Raft consensus algorithm implemented from scratch and ML training distributed across Docker containers.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>Computational General Relativity</h3><span class="when">2021&ndash;2023</span></div>
+    <div class="where">Baylor University</div>
+    <p>Parallelized tensor calculations to compute wormhole and black hole invariants, and numerically evaluated
+    CMB contributions from the loop quantum cosmology big bounce model.</p>
+  </div>
+</main>
+
+  <footer>&copy; 2026 John Joseph Marchetta. Built with curiosity, quantum error correction, and a little too much coffee.</footer>
+  <script src="nav.js"></script>
+</body>
+</html>

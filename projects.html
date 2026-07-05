@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | John Joseph Marchetta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">John Joseph Marchetta</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <div class="links">
+      <a href="index.html" class="link">Home</a>
+      <a href="hep-th-gravity.html" class="link">HEP-Th / Gravity</a>
+      <a href="quantum-computing.html" class="link">Quantum Computing</a>
+      <a href="hpc.html" class="link">HPC</a>
+      <a href="ai.html" class="link">AI</a>
+      <a href="projects.html" class="link active">Projects</a>
+      <a href="publications.html" class="link">Publications</a>
+      <a href="teaching.html" class="link">Teaching</a>
+      <a href="contact.html" class="link">Contact</a>
+    </div>
+  </nav>
+  
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Projects</h1>
+    <p class="lede">A selection of systems and research projects spanning distributed systems, GPU computing, quantum error correction, and compilers.</p>
+  </div>
+</header>
+
+<main>
+  <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+    <div class="card accent-qc">
+      <div class="icon icon-qc"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div>
+      <h3>Quantum Error Correction Pipeline</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">Fault-tolerant microservice pipeline using Apache Camel/ActiveMQ to route and filter error syndromes over JMS,
+      parallel dispatching to MWPM, Union-Find, and Majority Vote decoders with a voting aggregator.</p>
+      <div class="tags"><span class="tag">Apache Camel</span><span class="tag">ActiveMQ</span><span class="tag">Decoders</span></div>
+    </div>
+
+    <div class="card accent-hpc">
+      <div class="icon icon-hpc"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 9h6v6H9z"/></svg></div>
+      <h3>CUDA Quantum Circuit Simulator</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">20-qubit GPU-accelerated simulator with GHZ state preparation and concurrent CUDA stream execution. Used
+      Nsight to identify memory-bound kernels and tune kernel launch parameters for maximum gate-level parallelism.</p>
+      <div class="tags"><span class="tag">CUDA</span><span class="tag">Nsight</span><span class="tag">C++</span></div>
+    </div>
+
+    <div class="card accent-hep">
+      <div class="icon icon-hep"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4 12h16M4 6h16M4 18h16"/></svg></div>
+      <h3>Raft REST Message Queue</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">Distributed message queue in Python exposing a REST API (Flask) for PUT/GET operations on FIFO topic queues.
+      Implemented the full Raft consensus algorithm from scratch, with ML training on Docker containers.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Raft</span><span class="tag">Docker</span></div>
+    </div>
+
+    <div class="card accent-ai">
+      <div class="icon icon-ai"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4 20l6-6 4 4 6-8"/></svg></div>
+      <h3>GoLite Compiler</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">Full compiler pipeline in Go &mdash; ANTLR lexer/parser &rarr; AST &rarr; SSA &rarr; liveness analysis &rarr;
+      LLVM IR &rarr; ARM assembly.</p>
+      <div class="tags"><span class="tag">Go</span><span class="tag">ANTLR</span><span class="tag">LLVM</span></div>
+    </div>
+
+    <div class="card accent-hpc">
+      <div class="icon icon-hpc"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div>
+      <h3>HPC & Scientific Computing: Lennard-Jones Kernel</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">Achieved up to 30&times; speedup of a C++ Lennard-Jones force kernel by restructuring data from AoS to SoA,
+      enabling compiler SIMD auto-vectorization and OpenMP parallelism.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">OpenMP</span><span class="tag">SIMD</span></div>
+    </div>
+
+    <div class="card accent-qc">
+      <div class="icon icon-qc"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+      <h3>Compile-Time Quantum Circuit Simulator</h3>
+      <p style="color:var(--text-dim); font-size:0.92rem; margin:0 0 12px;">Template metaprogramming-based quantum circuit simulator in C++, pushing circuit structure into the type
+      system for compile-time evaluation.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">TMP</span></div>
+    </div>
+
+  </div>
+</main>
+
+  <footer>&copy; 2026 John Joseph Marchetta. Built with curiosity, quantum error correction, and a little too much coffee.</footer>
+  <script src="nav.js"></script>
+</body>
+</html>

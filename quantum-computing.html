@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Computing | John Joseph Marchetta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">John Joseph Marchetta</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <div class="links">
+      <a href="index.html" class="link">Home</a>
+      <a href="hep-th-gravity.html" class="link">HEP-Th / Gravity</a>
+      <a href="quantum-computing.html" class="link active">Quantum Computing</a>
+      <a href="hpc.html" class="link">HPC</a>
+      <a href="ai.html" class="link">AI</a>
+      <a href="projects.html" class="link">Projects</a>
+      <a href="publications.html" class="link">Publications</a>
+      <a href="teaching.html" class="link">Teaching</a>
+      <a href="contact.html" class="link">Contact</a>
+    </div>
+  </nav>
+  
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="eyebrow">Research Area</div>
+    <h1>Quantum Computing</h1>
+    <p class="lede">Quantum error correction, fault tolerance, and topological codes &mdash; the current center of gravity of my research, spanning GPU-accelerated simulation, fault-tolerant decoding pipelines, and the mathematics of code construction.</p>
+  </div>
+</header>
+
+<main class="accent-qc">
+  <h2 class="section-title">Focus Areas</h2>
+  <div class="tags" style="margin-bottom:32px;">
+    <span class="tag">Quantum Error Correction</span>
+    <span class="tag">Fault Tolerance</span>
+    <span class="tag">Topological Codes</span>
+    <span class="tag">Quantum Algorithms</span>
+    <span class="tag">Decoders</span>
+  </div>
+
+  <h2 class="section-title">Projects & Work</h2>
+
+  <div class="entry">
+    <div class="meta"><h3>Quantum Error Correction Pipeline</h3><span class="when">MPCS Project</span></div>
+    <div class="where">Apache Camel / ActiveMQ</div>
+    <p>Built a fault-tolerant microservice pipeline that routes and filters error syndromes over JMS, dispatching in
+    parallel to Minimum-Weight Perfect Matching (MWPM), Union&ndash;Find, and Majority Vote decoders, with a voting
+    aggregator to reconcile their outputs.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>CUDA Quantum Circuit Simulator</h3><span class="when">MPCS Project</span></div>
+    <div class="where">GPU Programming</div>
+    <p>20-qubit GPU-accelerated statevector simulator with GHZ state preparation and concurrent CUDA stream
+    execution. Used Nsight to identify memory-bound kernels and quantify stream-overlap throughput gains, then
+    tuned memory layout and kernel launch parameters for maximum gate-level parallelism.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>Choi Isomorphism</h3><span class="when">2021</span></div>
+    <div class="where">Quantum Information Seminar, Baylor University</div>
+    <p>Seminar presentation on the Choi&ndash;Jamio&#322;kowski isomorphism between quantum channels and states, a
+    foundational tool for reasoning about error correction and channel capacity.</p>
+  </div>
+
+  <div class="entry">
+    <div class="meta"><h3>Compile-Time Quantum Circuit Simulator</h3><span class="when">MPCS Project</span></div>
+    <div class="where">C++ Template Metaprogramming</div>
+    <p>Explored compile-time circuit simulation using C++ template metaprogramming, pushing as much circuit
+    structure as possible into the type system ahead of runtime execution.</p>
+  </div>
+
+  <h2 class="section-title">Currently Reading & Building Toward</h2>
+  <div class="panel">
+    <p>My current focus is on generalized toric codes, higher-group symmetry, and code construction from new
+    mathematical structures &mdash; working through bivariate bicycle (BB) code constructions, CSS code formalism,
+    Laurent polynomial stabilizer representations, and anyon condensation at boundaries. This work is aimed at
+    contributing new lattice constructions to the open-source quantum error correction ecosystem.</p>
+  </div>
+</main>
+
+  <footer>&copy; 2026 John Joseph Marchetta. Built with curiosity, quantum error correction, and a little too much coffee.</footer>
+  <script src="nav.js"></script>
+</body>
+</html>
