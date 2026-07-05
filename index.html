@@ -6,76 +6,65 @@
 <title>John Marchetta</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
 }
 
 header {
-    background: #1e3a8a;
-    color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
+    background: linear-gradient(135deg, #111827, #1e3a8a);
 }
 
-header h1 {
+h1 {
     font-size: 3rem;
-}
-
-header p {
-    margin-top: 15px;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 nav {
-    background: white;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    gap: 25px;
+    padding: 18px;
+    background: #020617;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
+    color: #93c5fd;
     text-decoration: none;
-    color: #1e3a8a;
     font-weight: bold;
 }
 
 section {
     max-width: 900px;
     margin: 40px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    padding: 35px;
+    background: #111827;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(59,130,246,0.15);
 }
 
 h2 {
-    margin-bottom: 15px;
-    color: #1e3a8a;
+    color: #60a5fa;
 }
 
 .project {
-    border-left: 4px solid #1e3a8a;
+    border-left: 4px solid #60a5fa;
     padding-left: 15px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    color: gray;
+    color: #9ca3af;
 }
 </style>
-
 </head>
 
 <body>
@@ -94,82 +83,52 @@ footer {
 
 <section id="about">
     <h2>About Me</h2>
-
     <p>
-        I'm a graduate student in Computer Science with a background in
-        theoretical physics. My interests include quantum computing,
-        quantum error correction, machine learning, high-performance
-        computing, and web development.
+        I'm a graduate student in Computer Science with a background in theoretical physics.
+        My interests include quantum computing, quantum error correction, machine learning,
+        high-performance computing, and web development.
     </p>
 </section>
 
 <section id="projects">
+    <h2>Projects</h2>
 
-<h2>Projects</h2>
+    <div class="project">
+        <h3>Quantum Error Correction</h3>
+        <p>Implemented decoders including Union-Find, Belief Propagation, and MWPM.</p>
+    </div>
 
-<div class="project">
-<h3>Quantum Error Correction</h3>
+    <div class="project">
+        <h3>CUDA Quantum Simulator</h3>
+        <p>Developed GPU-accelerated quantum circuit simulation in CUDA C++.</p>
+    </div>
 
-<p>
-Implemented several quantum decoding algorithms including
-Union-Find, Belief Propagation, and MWPM.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>CUDA Quantum Simulator</h3>
-
-<p>
-Developed GPU-accelerated quantum circuit simulation in CUDA C++.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Personal Website</h3>
-
-<p>
-Building this website from scratch using HTML, CSS, and JavaScript.
-</p>
-
-</div>
-
+    <div class="project">
+        <h3>Personal Website</h3>
+        <p>Built this website using HTML and CSS, hosted with GitHub Pages.</p>
+    </div>
 </section>
 
 <section id="research">
-
-<h2>Research Interests</h2>
-
-<ul>
-<li>Quantum Computing</li>
-<li>Quantum Error Correction</li>
-<li>Topological Phases of Matter</li>
-<li>Machine Learning</li>
-<li>High Performance Computing</li>
-<li>Theoretical Physics</li>
-</ul>
-
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Quantum Computing</li>
+        <li>Quantum Error Correction</li>
+        <li>Topological Phases of Matter</li>
+        <li>Machine Learning</li>
+        <li>High Performance Computing</li>
+    </ul>
 </section>
 
 <section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: john@example.com</p>
-
-<p>GitHub: github.com/yourusername</p>
-
-<p>LinkedIn: linkedin.com/in/yourusername</p>
-
+    <h2>Contact</h2>
+    <p>Email: john@example.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourusername</p>
 </section>
 
 <footer>
-
-<p>© 2026 John Marchetta</p>
-
+    <p>© 2026 John Marchetta</p>
 </footer>
 
 </body>
