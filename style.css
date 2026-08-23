@@ -88,7 +88,7 @@ header.page-head{
 .profile-photo{
   width:110px;
   height:110px;
-  border-radius:50%;
+  border-radius:8px;
   background:var(--accent-soft);
   border:1px solid var(--line);
   display:flex;
@@ -115,14 +115,12 @@ header.page-head{
   margin-bottom:14px;
 }
 h1{
-  font-family:'Fraunces',serif;
-  font-weight:500;
-  font-size:42px;
-  line-height:1.05;
+  font-family:'Inter',sans-serif;
+  font-weight:600;
+  font-size:40px;
+  line-height:1.1;
   margin:0 0 12px;
-  letter-spacing:-0.01em;
-  font-optical-sizing:none;
-  font-variation-settings:'opsz' 20;
+  letter-spacing:-0.02em;
 }
 .subtitle{
   font-size:15.5px;
