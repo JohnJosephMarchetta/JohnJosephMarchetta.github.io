@@ -282,6 +282,38 @@ footer{
   color:var(--muted);
 }
 
+.talk-pdf{
+  display:inline-flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:16px;
+  text-decoration:none;
+  color:var(--muted);
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.03em;
+}
+
+.talk-pdf img{
+  width:180px;
+  height:auto;
+  display:block;
+  border:1px solid var(--line);
+  border-radius:4px;
+  background:#fff;
+  transition:transform .15s ease, border-color .15s ease;
+}
+
+.talk-pdf:hover img{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+}
+
+.talk-pdf:hover{
+  color:var(--accent);
+}
+
 @media (max-width: 560px){
   .entry-date, .flat-list .row .date{ flex-basis:80px; font-size:11px; }
   .entry-body-inner{ padding-left:100px; }
