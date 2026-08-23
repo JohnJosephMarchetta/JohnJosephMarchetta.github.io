@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quantum Computing — John Joseph Marchetta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <a class="brand" href="index.html">John Joseph Marchetta</a>
+  <ul class="tabs">
+    <li><a href="employment.html">Employment</a></li>
+    <li><a href="research.html">Research &amp; Papers</a></li>
+    <li><a href="talks.html">Academic Talks</a></li>
+    <li><a href="volunteer.html">Volunteer / Teaching</a></li>
+    <li><a href="computer-systems.html">Computer Systems</a></li>
+    <li><a href="quantum-computing.html" class="active">Quantum Computing</a></li>
+    <li><a href="ai.html">AI</a></li>
+  </ul>
+</div></nav>
+
+<div class="wrap">
+  <header class="page-head">
+    <div class="eyebrow">Quantum Computing</div>
+    <h1>Quantum Computing &amp; Error Correction</h1>
+    <p class="subtitle">Simulation, decoding, and open-source work aimed at quantum error correction research.</p>
+  </header>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-date">&nbsp;</div>
+      <div class="entry-title-block">
+        <div class="entry-title">CUDA Quantum Circuit Simulator</div>
+        <div class="entry-org">GPU Computing</div>
+      </div>
+      <div class="entry-toggle"><svg viewBox="0 0 10 10"><path d="M5 0v10M0 5h10" stroke-width="1.2" fill="none"/></svg></div>
+    </div>
+    <div class="entry-body">
+      <div class="entry-body-inner">
+        <p>20-qubit GPU-accelerated simulator with GHZ state preparation and concurrent CUDA stream execution. Used Nsight to identify memory-bound kernels and quantify stream overlap throughput gains; tuned memory layout and kernel launch parameters for maximum gate-level parallelism.</p>
+        <span class="tag">CUDA</span><span class="tag">Nsight</span><span class="tag">GHZ States</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-date">&nbsp;</div>
+      <div class="entry-title-block">
+        <div class="entry-title">Quantum Error Correction Pipeline</div>
+        <div class="entry-org">Fault-Tolerant Microservices</div>
+      </div>
+      <div class="entry-toggle"><svg viewBox="0 0 10 10"><path d="M5 0v10M0 5h10" stroke-width="1.2" fill="none"/></svg></div>
+    </div>
+    <div class="entry-body">
+      <div class="entry-body-inner">
+        <p>Fault-tolerant pipeline using Apache Camel/ActiveMQ to route and filter error syndromes over JMS, with parallel dispatch to MWPM, Union-Find, and Majority Vote decoders and a voting aggregator.</p>
+        <span class="tag">Apache Camel</span><span class="tag">ActiveMQ</span><span class="tag">MWPM</span><span class="tag">Union-Find</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-date">2021</div>
+      <div class="entry-title-block">
+        <div class="entry-title">Choi Isomorphism</div>
+        <div class="entry-org">Quantum Information Seminar, Baylor University</div>
+      </div>
+      <div class="entry-toggle"><svg viewBox="0 0 10 10"><path d="M5 0v10M0 5h10" stroke-width="1.2" fill="none"/></svg></div>
+    </div>
+    <div class="entry-body">
+      <div class="entry-body-inner">
+        <p>Seminar presentation on the Choi isomorphism between quantum channels and states.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>Last updated August 2026</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
